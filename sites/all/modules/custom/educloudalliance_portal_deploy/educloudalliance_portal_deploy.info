@@ -1,0 +1,6 @@
+name = Educloud Alliance Portal Deploy
+description = Educloud Alliance Portal Deploy module
+package = Educloud Portal
+
+core = 7.x
+files[] = tests/educloudalliance_portal_deploy.test

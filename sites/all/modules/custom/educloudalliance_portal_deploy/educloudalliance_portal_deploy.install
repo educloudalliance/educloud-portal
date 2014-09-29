@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file Install functions for educloudalliance_portal_deploy.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function educloudalliance_portal_deploy_install() {
+  // TODO: Install hooks
+}
