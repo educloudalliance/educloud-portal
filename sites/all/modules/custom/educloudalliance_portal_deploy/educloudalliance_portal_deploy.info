@@ -3,4 +3,7 @@ description = Educloud Alliance Portal Deploy module
 package = Educloud Portal
 
 core = 7.x
+
 files[] = tests/educloudalliance_portal_deploy.test
+
+dependencies[] = educloudalliance_portal_configuration

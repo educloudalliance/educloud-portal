@@ -1,0 +1,8 @@
+name = Educloud Alliance Portal configuration
+description = Educloud Alliance Portal configuration module
+package = Educloud Portal
+
+core = 7.x
+
+dependencies[] = features
+dependencies[] = views
