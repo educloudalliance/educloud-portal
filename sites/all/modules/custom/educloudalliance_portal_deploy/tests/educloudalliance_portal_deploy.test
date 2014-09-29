@@ -1,1 +1,21 @@
 <?php
+
+/**
+ * @file
+ * Educloud Alliance Portal deploy tests.
+ */
+
+class EduCloudPortalDeployTestCase extends DrupalWebTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Educloud Portal tests',
+      'description' => 'Educloud Alliance Portal deploy tests.',
+      'group' => 'educloudalliance_portal',
+    );
+  }
+
+  public function testSomething() {
+    $this->pass('TODO');
+  }
+}
