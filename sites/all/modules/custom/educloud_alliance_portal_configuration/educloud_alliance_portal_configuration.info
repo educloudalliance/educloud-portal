@@ -1,9 +1,0 @@
-name = Educloud Alliance Portal configuration
-description = Educloud Alliance Portal configuration module
-core = 7.x
-package = Educloud Portal
-dependencies[] = ctools
-dependencies[] = features
-dependencies[] = views
-features[features_api][] = api:2
-project path = sites/all/modules/custom

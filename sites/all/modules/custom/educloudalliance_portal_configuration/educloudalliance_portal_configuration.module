@@ -1,6 +1,5 @@
 <?php
-
 /**
- * @file Module functions for educloudalliance_portal_configuration.
+ * @file
+ * Module functions for configuration module.
  */
-
