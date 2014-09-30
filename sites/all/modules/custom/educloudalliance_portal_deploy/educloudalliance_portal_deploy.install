@@ -15,4 +15,22 @@ function educloudalliance_portal_deploy_install() {
   $theme_settings['toggle_name'] = 0;
   $theme_settings['toggle_slogan'] = 0;
   variable_set('theme_educloud_portal_settings', $theme_settings);
+
+  // Hide unwanted blocks.
+  $unwanted_blocks = array(
+    'system' => array('navigation', 'management'),
+    'user' => array('login'),
+    'search' => array('form'),
+  );
+
+  foreach ($unwanted_blocks as $module => $blocks) {
+    db_update('block')
+    ->fields(array(
+      'region' => -1,
+    ))
+    ->condition('module', $module)
+    ->condition('delta', $blocks)
+    ->execute();
+  }
+
 }
