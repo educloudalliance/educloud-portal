@@ -28,7 +28,6 @@
   margin-top: 65px;
 }
 
-
 #navigation a {
   color: #fff;
   line-height: 3.5em;
@@ -48,4 +47,9 @@
   float: left;
   background-color: #01AEF0;
   border-bottom: 1px solid #2BA4D6;
+}
+
+#navigation {
+  max-width: 1200px;
+
 }

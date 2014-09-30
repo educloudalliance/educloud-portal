@@ -1796,7 +1796,7 @@ tr.selected td {
   margin-top: 65px;
 }
 
-/* line 32, ../sass/styles.scss */
+/* line 31, ../sass/styles.scss */
 #navigation a {
   color: #fff;
   line-height: 3.5em;
@@ -1806,16 +1806,21 @@ tr.selected td {
   font-family: "Arial";
 }
 
-/* line 41, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 #navigation li:hover, #navigation li.active {
   background-color: #ff8533;
 }
 
-/* line 45, ../sass/styles.scss */
+/* line 44, ../sass/styles.scss */
 #top-bar {
   width: 100%;
   height: 3.8em;
   float: left;
   background-color: #01AEF0;
   border-bottom: 1px solid #2BA4D6;
+}
+
+/* line 52, ../sass/styles.scss */
+#navigation {
+  max-width: 1200px;
 }
