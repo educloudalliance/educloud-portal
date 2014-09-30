@@ -87,17 +87,17 @@ function educloudalliance_portal_configuration_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_opetusreseptit:node/1
-  $menu_links['main-menu_opetusreseptit:node/1'] = array(
+  // Exported menu link: main-menu_learning-recipes:node/1
+  $menu_links['main-menu_learning-recipes:node/1'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'node/1',
     'router_path' => 'node/%',
-    'link_title' => 'Opetusreseptit',
+    'link_title' => 'Learning recipes',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_opetusreseptit:node/1',
+      'identifier' => 'main-menu_learning-recipes:node/1',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -107,17 +107,17 @@ function educloudalliance_portal_configuration_menu_default_menu_links() {
     'weight' => -47,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_qa---kysy:http://kysy.pilvivayla.fi
-  $menu_links['main-menu_qa---kysy:http://kysy.pilvivayla.fi'] = array(
+  // Exported menu link: main-menu_qa---ask:http://kysy.pilvivayla.fi
+  $menu_links['main-menu_qa---ask:http://kysy.pilvivayla.fi'] = array(
     'menu_name' => 'main-menu',
     'link_path' => 'http://kysy.pilvivayla.fi',
     'router_path' => '',
-    'link_title' => 'QA - kysy',
+    'link_title' => 'QA - ask',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'main-menu_qa---kysy:http://kysy.pilvivayla.fi',
+      'identifier' => 'main-menu_qa---ask:http://kysy.pilvivayla.fi',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -127,35 +127,14 @@ function educloudalliance_portal_configuration_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_yhteystiedot:yhteystiedot
-  $menu_links['main-menu_yhteystiedot:yhteystiedot'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'yhteystiedot',
-    'router_path' => 'yhteystiedot',
-    'link_title' => 'Yhteystiedot',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_yhteystiedot:yhteystiedot',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -44,
-    'customized' => 1,
-  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Bazaar');
   t('Consortium');
   t('Developers');
   t('Home');
-  t('Opetusreseptit');
-  t('QA - kysy');
-  t('Yhteystiedot');
+  t('Learning recipes');
+  t('QA - ask');
 
 
   return $menu_links;
