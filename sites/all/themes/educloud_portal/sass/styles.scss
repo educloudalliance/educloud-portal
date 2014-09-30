@@ -23,3 +23,29 @@
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
+
+.toolbar #navigation {
+  margin-top: 65px;
+}
+
+
+#navigation a {
+  color: #fff;
+  line-height: 3.5em;
+  text-decoration: none;
+  padding: 1.1em;
+  font-size: 1.1em;
+  font-family: "Arial";
+}
+
+#navigation li:hover, #navigation li.active {
+  background-color: #ff8533;
+}
+
+#top-bar {
+  width: 100%;
+  height: 3.8em;
+  float: left;
+  background-color: #01AEF0;
+  border-bottom: 1px solid #2BA4D6;
+}
