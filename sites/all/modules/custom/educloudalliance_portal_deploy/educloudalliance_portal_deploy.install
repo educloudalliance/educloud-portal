@@ -8,5 +8,11 @@
  * Implements hook_install().
  */
 function educloudalliance_portal_deploy_install() {
-  // TODO: Install hooks
+  theme_enable(array('educloud_portal'));
+  variable_set('theme_default', 'educloud_portal');
+  $theme_settings = variable_get('theme_educloud_portal_settings');
+  $theme_settings['toggle_logo'] = 0;
+  $theme_settings['toggle_name'] = 0;
+  $theme_settings['toggle_slogan'] = 0;
+  variable_set('theme_educloud_portal_settings', $theme_settings);
 }
