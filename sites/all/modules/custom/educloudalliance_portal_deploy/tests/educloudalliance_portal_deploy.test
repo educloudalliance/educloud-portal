@@ -15,7 +15,23 @@ class EduCloudPortalDeployTestCase extends DrupalWebTestCase {
     );
   }
 
-  public function testSomething() {
-    $this->pass('TODO');
+  public function setUp() {
+    parent::setup('educloudalliance_portal_deploy');
+  }
+
+  public function testFrontPage() {
+    $this->drupalGet('<front>');
+
+    // Test top bar links from 2 different features
+    $this->assertLink('Contact');
+    $this->assertLink('Bazaar');
+    $this->assertLink('Developers');
+
+    // Check theme settings.
+    $this->assertNoRaw('id="logo"');
+    $this->assertNoRaw('id="name-and-slogan"');
+
+
+
   }
 }
