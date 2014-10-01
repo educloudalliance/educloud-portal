@@ -15,7 +15,9 @@ projects[jquery_update][version] = "2.4"
 
 projects[profile2][version] = "1.3"
 
-projects[responsive_menus] = "1.5"
+projects[responsive_menus][version] = "1.5"
+
+projects[strongarm][version] = "2.0"
 
 projects[views][version] = "3.8"
 

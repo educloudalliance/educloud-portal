@@ -87,26 +87,6 @@ function educloudalliance_portal_configuration_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_learning-recipes:node/1
-  $menu_links['main-menu_learning-recipes:node/1'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/1',
-    'router_path' => 'node/%',
-    'link_title' => 'Learning recipes',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_learning-recipes:node/1',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -47,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_qa---ask:http://kysy.pilvivayla.fi
   $menu_links['main-menu_qa---ask:http://kysy.pilvivayla.fi'] = array(
     'menu_name' => 'main-menu',
@@ -133,7 +113,6 @@ function educloudalliance_portal_configuration_menu_default_menu_links() {
   t('Consortium');
   t('Developers');
   t('Home');
-  t('Learning recipes');
   t('QA - ask');
 
 

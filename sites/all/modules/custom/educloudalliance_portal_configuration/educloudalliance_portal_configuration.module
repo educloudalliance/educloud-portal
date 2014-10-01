@@ -1,5 +1,11 @@
 <?php
 /**
  * @file
+ * Code for the Educloud Alliance Portal configuration feature.
+ */
+
+include_once 'educloudalliance_portal_configuration.features.inc';
+/**
+ * @file
  * Module functions for configuration module.
  */
