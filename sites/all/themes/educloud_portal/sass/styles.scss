@@ -51,5 +51,92 @@
 
 #navigation {
   max-width: 1200px;
+}
+
+#main-menu {
+  max-width: 800px;
+}
+
+#main-menu .clearfix:after {
+  clear: none;
+}
+
+.view-frontpage-news {
+  max-height: 12em;
+  float: left;
+  width: 450px;
+  padding-left: 2em;
+}
+
+.view-frontpage-news .view-content {
+  max-height: 12em;
+}
+
+.view-frontpage-news h1 {
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-size: 36pt;
+  text-align: center;
+  color: #ff8533;
+  border-bottom: 5px solid #eee;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-top: 0;
+  padding-bottom: 0.3em;
+
+}
+
+.view-frontpage-news .views-field-title {
+  padding-left: 34px;
+  min-height: 34px;
+  padding-left: 3em;
+  margin-bottom: 1em;
+  background-image: url('../images/cloud-bullet.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  line-height: 30px;
+}
+
+.view-frontpage-cloud-logo {
+  width: 600px;
+  content: " ";
+  height: 15em;
+  float: left;
+  background-image: url('../images/openalliance-cloud.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#block-views-frontpage-who-and-why-block {
+  clear: both;
+  background-color: #92DEF8;
+  min-height: 18em;
+  max-width: 100%;
+}
+
+#block-views-frontpage-who-and-why-block h2 {
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-size: 30pt;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  max-width: 600px;
+  line-height: normal;
+  margin: 0.5em 0 0 0;
+
+}
+
+.view-frontpage-who-and-why .attachment {
+  width: 600px;
+  max-width: 600px;
+  min-height: 18em;
+  float:left;
+  border: 2px solid red;
+}
+
+.view-frontpage-who-and-why .view-content {
+  float: left;
+  max-width: 550px;
+  border: 2px solid red;
 
 }
