@@ -11,6 +11,8 @@ projects[entity][version] = "1.5"
 
 projects[features][version] = "2.2"
 
+projects[jquery_update][version] = "2.4"
+
 projects[profile2][version] = "1.3"
 
 projects[responsive_menus] = "1.5"
