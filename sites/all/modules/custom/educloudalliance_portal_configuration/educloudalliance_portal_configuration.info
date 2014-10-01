@@ -5,6 +5,7 @@ package = Educloud Portal
 dependencies[] = ctools
 dependencies[] = educloudalliance_portal_user_profile
 dependencies[] = features
+dependencies[] = jquery_update
 dependencies[] = menu
 dependencies[] = responsive_menus
 dependencies[] = strongarm
