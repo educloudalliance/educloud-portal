@@ -20,5 +20,6 @@ features[menu_links][] = main-menu_home:<front>
 features[menu_links][] = main-menu_qa---ask:http://kysy.pilvivayla.fi
 features[variable][] = jquery_update_compression_type
 features[variable][] = jquery_update_jquery_version
+features[variable][] = responsive_menus_mean_menu_media_size
 features[variable][] = responsive_menus_style
 project path = sites/all/modules/custom
