@@ -109,9 +109,10 @@
 
 #block-views-frontpage-who-and-why-block {
   clear: both;
-  background-color: #92DEF8;
   min-height: 18em;
   max-width: 100%;
+  background-color: rgba(146, 222, 248, 1);
+
 }
 
 #block-views-frontpage-who-and-why-block h2 {
@@ -131,12 +132,10 @@
   max-width: 600px;
   min-height: 18em;
   float:left;
-  border: 2px solid red;
 }
 
-.view-frontpage-who-and-why .view-content {
+#who-and-why {
   float: left;
-  max-width: 550px;
-  border: 2px solid red;
-
+  max-width: 570px;
+  width:100%;
 }

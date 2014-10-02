@@ -1888,12 +1888,12 @@ tr.selected td {
 /* line 110, ../sass/styles.scss */
 #block-views-frontpage-who-and-why-block {
   clear: both;
-  background-color: #92DEF8;
   min-height: 18em;
   max-width: 100%;
+  background-color: #92def8;
 }
 
-/* line 117, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 #block-views-frontpage-who-and-why-block h2 {
   font-family: "Nunito", Helvetica, sans-serif;
   font-size: 30pt;
@@ -1905,18 +1905,17 @@ tr.selected td {
   margin: 0.5em 0 0 0;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .view-frontpage-who-and-why .attachment {
   width: 600px;
   max-width: 600px;
   min-height: 18em;
   float: left;
-  border: 2px solid red;
 }
 
 /* line 137, ../sass/styles.scss */
-.view-frontpage-who-and-why .view-content {
+#who-and-why {
   float: left;
-  max-width: 550px;
-  border: 2px solid red;
+  max-width: 570px;
+  width: 100%;
 }
