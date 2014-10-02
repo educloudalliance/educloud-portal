@@ -142,7 +142,7 @@
 
 #block-views-frontpage-bazaar-items-block, #block-views-frontpage-feature-wishes-block, #block-views-frontpage-qa-block {
     display: inline-block;
-    max-width: 33%;
+    max-width: 40%;
     position: relative;
 }
 
@@ -165,14 +165,21 @@
     border-bottom: 4px solid #ff8533;
     border-top: 4px solid #ff8533;
     color: #ffffff;
-    padding: 2px 15px;
+    padding: 0 10px;
     text-align: center;
     text-transform: uppercase;
+    max-width: 285px;
+    min-width: 285px;
 }
 
 #footer {
     background-color: #333333;
+    bottom: 0;
+    height: 150px;
+    left: 0;
     max-width: 100%;
+    position: absolute;
+    width: 100%;
 }
 #footer > div {
     color: #ffffff;
@@ -189,5 +196,7 @@
 }
 
 #contact-info-footer > p {
+    font-weight: 700;
     margin-left: 40px;
+    margin-top: -15px;
 }

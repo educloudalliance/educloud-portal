@@ -110,6 +110,8 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   // Establish a vertical rhythm unit using $base-line-height.
   @include adjust-leading-to(1);
+  position: relative;
+  min-height: 100%;
 }
 
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
@@ -124,7 +126,7 @@ html {
 
 /* Remove default margin. */
 body {
-  margin: 0;
+  margin: 0 0 150px;
   padding: 0;
 }
 
