@@ -39,7 +39,7 @@ function educloudalliance_portal_configuration_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = '<div id="contact-info-footer">
 <h2>Contact information</h2>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   /* Field: Global: Custom text */
@@ -49,7 +49,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div id="contact-info-footer">
 <h2>Contact information</h2>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
