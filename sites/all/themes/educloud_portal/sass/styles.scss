@@ -61,6 +61,14 @@
   clear: none;
 }
 
+.front #page {
+    padding-bottom: 80px;
+}
+
+.field-content > a {
+    color: #0093ca;
+}
+
 .view-frontpage-news {
   float: left;
   width: 450px;
@@ -142,17 +150,17 @@
 
 #block-views-frontpage-bazaar-items-block, #block-views-frontpage-feature-wishes-block, #block-views-frontpage-qa-block {
     display: inline-block;
-    max-width: 40%;
+    max-width: 344px;
     position: relative;
 }
 
 #block-views-frontpage-bazaar-items-block {
-    margin-left: 40px;
-    margin-right: 70px;
+    margin-left: 15px;
+    margin-right: 50px;
 }
 
 #block-views-frontpage-feature-wishes-block {
-    margin-right: 70px;
+    margin-right: 50px;
 }
 
 #block-views-frontpage-bazaar-items-block .block__title.block-title,
@@ -168,8 +176,8 @@
     padding: 0 10px;
     text-align: center;
     text-transform: uppercase;
-    max-width: 285px;
-    min-width: 285px;
+    max-width: 324px;
+    min-width: 324px;
 }
 
 #footer {
@@ -199,4 +207,32 @@
     font-weight: 700;
     margin-left: 40px;
     margin-top: -15px;
+}
+
+#block-views-frontpage-bazaar-items-block .views-field.views-field-title,
+#block-views-frontpage-feature-wishes-block .views-field.views-field-title,
+#block-views-frontpage-qa-block .views-field.views-field-title {
+    background-color: #cceffc;
+    background-image: url("../images/edu_bullets.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    min-height: 60px;
+    padding-left: 15px;
+    padding-top: 15px;
+    text-align: left;
+}
+
+#block-views-frontpage-bazaar-items-block .field-content,
+#block-views-frontpage-feature-wishes-block .field-content,
+#block-views-frontpage-qa-block .field-content {
+    /*padding-left: 15px;*/
+}
+
+#block-views-frontpage-bazaar-items-block .field-content > a,
+#block-views-frontpage-feature-wishes-block .field-content > a,
+#block-views-frontpage-qa-block .field-content > a {
+    color: #33a1d1;
+    text-decoration: none;
+    word-wrap: break-word;
 }
