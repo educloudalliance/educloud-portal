@@ -338,6 +338,10 @@ Donec tincidunt sagittis posuere. Integer eu congue nibh? Donec euismod ex turpi
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div id="who-and-why">
+<h2>To who and why?</h2>
+Donec tincidunt sagittis posuere. Integer eu congue nibh? Donec euismod ex turpis, non ultricies turpis volutpat tincidunt. Nulla fringilla consectetur commodo. Vestibulum consequat elementum orci sed consectetur. Duis consequat tortor ut commodo egestas? Sed ipsum velit, egestas vel blandit nullam.
+</div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
