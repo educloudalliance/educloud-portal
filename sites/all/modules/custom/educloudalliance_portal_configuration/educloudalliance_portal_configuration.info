@@ -27,6 +27,7 @@ features[variable][] = jquery_update_compression_type
 features[variable][] = jquery_update_jquery_version
 features[variable][] = responsive_menus_mean_menu_media_size
 features[variable][] = responsive_menus_style
+features[views_view][] = educloudalliance_portal_footer_block
 features[views_view][] = frontpage_bazaar_items
 features[views_view][] = frontpage_cloud_logo
 features[views_view][] = frontpage_feature_wishes
