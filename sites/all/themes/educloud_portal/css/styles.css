@@ -1956,3 +1956,31 @@ tr.selected td {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* line 173, ../sass/styles.scss */
+#footer {
+  background-color: #333333;
+  max-width: 100%;
+}
+
+/* line 177, ../sass/styles.scss */
+#footer > div {
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* line 183, ../sass/styles.scss */
+#contact-info-footer > h2 {
+  margin-left: 40px;
+}
+
+/* line 187, ../sass/styles.scss */
+#footer > div p {
+  color: #9aadb7;
+}
+
+/* line 191, ../sass/styles.scss */
+#contact-info-footer > p {
+  margin-left: 40px;
+}

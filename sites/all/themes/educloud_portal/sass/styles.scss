@@ -169,3 +169,25 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+#footer {
+    background-color: #333333;
+    max-width: 100%;
+}
+#footer > div {
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#contact-info-footer > h2 {
+    margin-left: 40px;
+}
+
+#footer > div p {
+    color: #9aadb7;
+}
+
+#contact-info-footer > p {
+    margin-left: 40px;
+}

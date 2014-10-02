@@ -91,9 +91,7 @@ unset($page['content']['system_main']['default_message']);
     </div>
 
   </div>
-
-  <?php print render($page['footer']); ?>
-
 </div>
+<?php print render($page['footer']); ?>
 
 <?php print render($page['bottom']); ?>
