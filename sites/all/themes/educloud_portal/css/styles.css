@@ -1891,7 +1891,7 @@ tr.selected td {
   clear: both;
   min-height: 18em;
   max-width: 100%;
-  background: url("../images/whowhy_bg_full.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../images/whowhy_bg_full.png") repeat-x scroll left bottom rgba(0, 0, 0, 0);
 }
 
 /* line 117, ../sass/styles.scss */
@@ -1919,5 +1919,23 @@ tr.selected td {
   float: left;
   max-width: 570px;
   width: 100%;
-  background-color: #92def8;
+  /*background-color: rgba(146, 222, 248, 1);*/
+}
+
+/* line 142, ../sass/styles.scss */
+#block-views-frontpage-bazaar-items-block, #block-views-frontpage-feature-wishes-block, #block-views-frontpage-qa-block {
+  display: inline-block;
+  max-width: 33%;
+  position: relative;
+}
+
+/* line 148, ../sass/styles.scss */
+#block-views-frontpage-bazaar-items-block {
+  margin-left: 40px;
+  margin-right: 150px;
+}
+
+/* line 153, ../sass/styles.scss */
+#block-views-frontpage-feature-wishes-block {
+  margin-right: 150px;
 }

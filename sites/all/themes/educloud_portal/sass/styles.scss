@@ -111,7 +111,7 @@
   clear: both;
   min-height: 18em;
   max-width: 100%;
-  background: url("../images/whowhy_bg_full.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: url("../images/whowhy_bg_full.png") repeat-x scroll left bottom rgba(0, 0, 0, 0);
 }
 
 #block-views-frontpage-who-and-why-block h2 {
@@ -136,5 +136,20 @@
   float: left;
   max-width: 570px;
   width:100%;
-  background-color: rgba(146, 222, 248, 1);
+  /*background-color: rgba(146, 222, 248, 1);*/
+}
+
+#block-views-frontpage-bazaar-items-block, #block-views-frontpage-feature-wishes-block, #block-views-frontpage-qa-block {
+    display: inline-block;
+    max-width: 33%;
+    position: relative;
+}
+
+#block-views-frontpage-bazaar-items-block {
+    margin-left: 40px;
+    margin-right: 150px;
+}
+
+#block-views-frontpage-feature-wishes-block {
+    margin-right: 150px;
 }
