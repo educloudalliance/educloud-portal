@@ -34,7 +34,7 @@
   text-decoration: none;
   padding: 1.1em;
   font-size: 1.1em;
-  font-family: "Arial";
+  font-family: 'Oxygen', sans-serif;
 }
 
 #navigation li:hover, #navigation li.active {
@@ -73,12 +73,12 @@
 }
 
 .view-frontpage-news h1 {
-  font-family: "Nunito", Helvetica, sans-serif;
-  font-size: 36pt;
+  font-family: 'Dosis', sans-serif;
+  font-size: 50pt;
+  font-weight: 200;
   text-align: center;
   color: #ff8533;
   border-bottom: 5px solid #eee;
-  font-weight: 300;
   text-transform: uppercase;
   line-height: normal;
   margin-top: 0;
@@ -111,20 +111,18 @@
   clear: both;
   min-height: 18em;
   max-width: 100%;
-  background-color: rgba(146, 222, 248, 1);
-
+  background: url("../images/whowhy_bg_full.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 #block-views-frontpage-who-and-why-block h2 {
-  font-family: "Nunito", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-family: 'Dosis', sans-serif;
+  font-size: 40pt;
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
   max-width: 600px;
   line-height: normal;
   margin: 0.5em 0 0 0;
-
 }
 
 .view-frontpage-who-and-why .attachment {
@@ -138,4 +136,5 @@
   float: left;
   max-width: 570px;
   width:100%;
+  background-color: rgba(146, 222, 248, 1);
 }
