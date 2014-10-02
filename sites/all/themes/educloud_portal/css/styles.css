@@ -1892,9 +1892,10 @@ tr.selected td {
   min-height: 18em;
   max-width: 100%;
   background: url("../images/whowhy_bg_full.png") repeat-x scroll left bottom rgba(0, 0, 0, 0);
+  margin-bottom: 50px;
 }
 
-/* line 117, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 #block-views-frontpage-who-and-why-block h2 {
   font-family: 'Dosis', sans-serif;
   font-size: 40pt;
@@ -1906,7 +1907,7 @@ tr.selected td {
   margin: 0.5em 0 0 0;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .view-frontpage-who-and-why .attachment {
   width: 600px;
   max-width: 600px;
@@ -1914,7 +1915,7 @@ tr.selected td {
   float: left;
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 #who-and-why {
   float: left;
   max-width: 570px;
@@ -1922,20 +1923,36 @@ tr.selected td {
   /*background-color: rgba(146, 222, 248, 1);*/
 }
 
-/* line 142, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 #block-views-frontpage-bazaar-items-block, #block-views-frontpage-feature-wishes-block, #block-views-frontpage-qa-block {
   display: inline-block;
   max-width: 33%;
   position: relative;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 #block-views-frontpage-bazaar-items-block {
   margin-left: 40px;
-  margin-right: 150px;
+  margin-right: 70px;
 }
 
-/* line 153, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 #block-views-frontpage-feature-wishes-block {
-  margin-right: 150px;
+  margin-right: 70px;
+}
+
+/* line 160, ../sass/styles.scss */
+#block-views-frontpage-bazaar-items-block .block__title.block-title,
+#block-views-frontpage-feature-wishes-block .block__title.block-title,
+#block-views-frontpage-qa-block .block__title.block-title {
+  font-family: "Dosis",sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  background-color: #ff6600;
+  border-bottom: 4px solid #ff8533;
+  border-top: 4px solid #ff8533;
+  color: #ffffff;
+  padding: 2px 15px;
+  text-align: center;
+  text-transform: uppercase;
 }

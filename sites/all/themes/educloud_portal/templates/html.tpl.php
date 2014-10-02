@@ -16,7 +16,7 @@
 <head>
   <?php print $head; ?>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Dosis:300,200' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Dosis:400,300,200' rel='stylesheet' type='text/css'>
   <title><?php print $head_title; ?></title>
 
   <?php if ($default_mobile_metatags): ?>
