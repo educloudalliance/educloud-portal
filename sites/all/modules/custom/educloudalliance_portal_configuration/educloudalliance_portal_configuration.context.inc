@@ -13,6 +13,34 @@ function educloudalliance_portal_configuration_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'educloudalliance_portal_footer_block';
+  $context->description = '';
+  $context->tag = '';
+  $context->conditions = array(
+    'sitewide' => array(
+      'values' => array(
+        1 => 1,
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-0bb46528f82eeaa8742cc84feb6f0901' => array(
+          'module' => 'views',
+          'delta' => '0bb46528f82eeaa8742cc84feb6f0901',
+          'region' => 'footer',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+  $export['educloudalliance_portal_footer_block'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'frontpage-blocks';
   $context->description = '';
   $context->tag = '';

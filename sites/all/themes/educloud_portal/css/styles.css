@@ -1838,10 +1838,10 @@ tr.selected td {
 
 /* line 64, ../sass/styles.scss */
 .view-frontpage-news {
-  max-height: 12em;
   float: left;
   width: 450px;
   padding-left: 2em;
+  margin-bottom: 40px;
 }
 
 /* line 71, ../sass/styles.scss */

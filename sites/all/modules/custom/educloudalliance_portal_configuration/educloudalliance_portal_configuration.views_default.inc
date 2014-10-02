@@ -22,7 +22,7 @@ function educloudalliance_portal_configuration_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Frontpage Bazaar items';
+  $handler->display->display_options['title'] = 'New in Bazaar';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -127,7 +127,7 @@ function educloudalliance_portal_configuration_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Frontpage feature wishes';
+  $handler->display->display_options['title'] = 'Feature wishes';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -253,7 +253,7 @@ function educloudalliance_portal_configuration_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Frontpage QA';
+  $handler->display->display_options['title'] = 'QA';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
