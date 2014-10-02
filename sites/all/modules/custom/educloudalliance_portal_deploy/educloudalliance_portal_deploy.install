@@ -34,3 +34,17 @@ function educloudalliance_portal_deploy_install() {
   }
 
 }
+
+/**
+ * Hide powered-by block in footer.
+ */
+function educloudalliance_portal_deploy_update_7001() {
+  db_update('block')
+    ->fields(array(
+      'status' => 0,
+    ))
+    ->condition('module', 'system')
+    ->condition('theme', 'educloud_portal')
+    ->condition('delta', 'powered-by')
+    ->execute();
+}
