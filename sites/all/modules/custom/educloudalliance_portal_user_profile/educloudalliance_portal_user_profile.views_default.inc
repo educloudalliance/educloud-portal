@@ -35,6 +35,14 @@ function educloudalliance_portal_user_profile_views_default_views() {
   $handler->display->display_options['row_options']['inline'] = array(
     'field_profile_picture' => 'field_profile_picture',
   );
+  /* Field: Profile: Full name */
+  $handler->display->display_options['fields']['field_full_name']['id'] = 'field_full_name';
+  $handler->display->display_options['fields']['field_full_name']['table'] = 'field_data_field_full_name';
+  $handler->display->display_options['fields']['field_full_name']['field'] = 'field_full_name';
+  $handler->display->display_options['fields']['field_full_name']['label'] = '';
+  $handler->display->display_options['fields']['field_full_name']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_full_name']['alter']['text'] = '<h2 class="contact-name">[field_full_name]</h2>';
+  $handler->display->display_options['fields']['field_full_name']['element_label_colon'] = FALSE;
   /* Field: Profile: Profile picture */
   $handler->display->display_options['fields']['field_profile_picture']['id'] = 'field_profile_picture';
   $handler->display->display_options['fields']['field_profile_picture']['table'] = 'field_data_field_profile_picture';
@@ -46,12 +54,6 @@ function educloudalliance_portal_user_profile_views_default_views() {
     'image_style' => 'medium',
     'image_link' => '',
   );
-  /* Field: Profile: Full name */
-  $handler->display->display_options['fields']['field_full_name']['id'] = 'field_full_name';
-  $handler->display->display_options['fields']['field_full_name']['table'] = 'field_data_field_full_name';
-  $handler->display->display_options['fields']['field_full_name']['field'] = 'field_full_name';
-  $handler->display->display_options['fields']['field_full_name']['label'] = '';
-  $handler->display->display_options['fields']['field_full_name']['element_label_colon'] = FALSE;
   /* Field: Profile: Role */
   $handler->display->display_options['fields']['field_role']['id'] = 'field_role';
   $handler->display->display_options['fields']['field_role']['table'] = 'field_data_field_role';
