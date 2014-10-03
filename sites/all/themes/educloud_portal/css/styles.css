@@ -2041,3 +2041,37 @@ tr.selected td {
 .front .views-row.views-row-1.views-row-odd.views-row-first {
   margin-top: 20px;
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 245, ../sass/styles.scss */
+  #block-views-frontpage-who-and-why-block h2 {
+    color: #000000;
+  }
+
+  /* line 248, ../sass/styles.scss */
+  #who-and-why {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 253, ../sass/styles.scss */
+  #block-views-frontpage-who-and-why-block h2 {
+    color: #000000;
+  }
+
+  /* line 256, ../sass/styles.scss */
+  #who-and-why {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 261, ../sass/styles.scss */
+  #block-views-frontpage-who-and-why-block h2 {
+    color: #000000;
+  }
+
+  /* line 264, ../sass/styles.scss */
+  #who-and-why {
+    padding-bottom: 30px;
+  }
+}
