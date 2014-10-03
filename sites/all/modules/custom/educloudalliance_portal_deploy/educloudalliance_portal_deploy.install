@@ -48,3 +48,11 @@ function educloudalliance_portal_deploy_update_7001() {
     ->condition('delta', 'powered-by')
     ->execute();
 }
+
+/**
+ * Revert features.
+ */
+function educloudalliance_portal_deploy_update_7002() {
+  features_revert();
+}
+
