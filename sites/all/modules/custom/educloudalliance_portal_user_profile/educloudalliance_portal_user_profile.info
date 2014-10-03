@@ -20,6 +20,6 @@ features[field_instance][] = profile2-contact_info-field_full_name
 features[field_instance][] = profile2-contact_info-field_profile_picture
 features[field_instance][] = profile2-contact_info-field_role
 features[profile2_type][] = contact_info
-features[views_view][] = yhteystiedot
+features[views_view][] = contact
 features_exclude[dependencies][ctools] = ctools
 project path = sites/all/modules/custom
