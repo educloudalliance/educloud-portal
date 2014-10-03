@@ -2074,3 +2074,37 @@ tr.selected td {
   background: #01aef0;
   padding: 1em;
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 275, ../sass/styles.scss */
+  #block-views-frontpage-who-and-why-block h2 {
+    color: #000000;
+  }
+
+  /* line 278, ../sass/styles.scss */
+  #who-and-why {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 283, ../sass/styles.scss */
+  #block-views-frontpage-who-and-why-block h2 {
+    color: #000000;
+  }
+
+  /* line 286, ../sass/styles.scss */
+  #who-and-why {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 291, ../sass/styles.scss */
+  #block-views-frontpage-who-and-why-block h2 {
+    color: #000000;
+  }
+
+  /* line 294, ../sass/styles.scss */
+  #who-and-why {
+    padding-bottom: 30px;
+  }
+}

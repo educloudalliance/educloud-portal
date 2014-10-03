@@ -270,3 +270,28 @@
   background: #01aef0;
   padding: 1em;
 }
+
+@include breakpoint('tablet') {
+  #block-views-frontpage-who-and-why-block h2 {
+      color: #000000;
+  }
+  #who-and-why {
+      padding-bottom: 30px;
+  }
+}
+@include breakpoint('mini-tablet') {
+  #block-views-frontpage-who-and-why-block h2 {
+      color: #000000;
+  }
+  #who-and-why {
+      padding-bottom: 30px;
+  }
+}
+@include breakpoint('phone') {
+  #block-views-frontpage-who-and-why-block h2 {
+      color: #000000;
+  }
+  #who-and-why {
+      padding-bottom: 30px;
+  }
+}
