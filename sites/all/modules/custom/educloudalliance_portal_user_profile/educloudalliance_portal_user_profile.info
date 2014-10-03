@@ -12,7 +12,6 @@ features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_base][] = field_description_of_work
 features[field_base][] = field_full_name
-features[field_base][] = field_image
 features[field_base][] = field_profile_picture
 features[field_base][] = field_role
 features[field_instance][] = profile2-contact_info-field_description_of_work
