@@ -68,9 +68,16 @@
             'class' => array('element-invisible'),
           ),
         )); ?>
-      </nav>
+    <?php else: ?>
+      <ul class="inline links clearfix" id="login"><li>
+      <?php print l(t('Log in'), 'user/login', array(
+        'attributes' => array(
+          'class' => array('links', 'inline', 'clearfix')
+        )));
+      ?>
+      </ul></li>
     <?php endif; ?>
-
+      </nav>
     <?php print render($page['header']); ?>
 
     </div>

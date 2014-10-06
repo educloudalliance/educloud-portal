@@ -61,6 +61,10 @@
   clear: none;
 }
 
+#user-menu-button {
+  max-width: 250px;
+}
+
 .front #page {
     padding-bottom: 80px;
 }
@@ -303,4 +307,78 @@
   #who-and-why {
       padding-bottom: 30px;
   }
+}
+
+#login {
+  float: right;
+}
+
+#login li {
+  padding: 0 1em 0 1em !important;
+}
+
+#user-button {
+  width: 12em;
+  min-height: 3em;
+  max-height: 3em;
+  clear: both;
+  background-color: #66CEF5;
+  color: #fff;
+  margin-top: 0.4em;
+}
+
+#user-button-role {
+  font-size: 0.8em;
+  padding: 0;
+  line-height: 0.7em;
+  padding-left: 0.1em;
+}
+
+#user-button-name, #user-button-role {
+  margin-left: 1em;
+}
+
+#user-button-name {
+  padding-top: 0.3em;
+  padding-left: 0;
+}
+
+#user-button-image {
+  float: right;
+  margin: 0.5em 0.5em 0.5em 0;
+  background: #fff;
+  height: 32px;
+  width: 32px;
+}
+
+.menu-button-menu {
+  color: #fff;
+  background-color: #66cef5;
+  display: none;
+  position: relative;
+  top: 0;
+  float: left;
+  width: 12em;
+  border-top: 1px solid #fff;
+}
+
+.menu-button-menu li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.menu-button-menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-button-menu a {
+  display: block;
+  margin: 0;
+  padding: 0.2em 1em 0 0 !important;
+  min-height: 1.5em;
+  max-height: 1.5em;
+  line-height: 1em !important;
 }

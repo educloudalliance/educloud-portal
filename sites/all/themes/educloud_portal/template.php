@@ -130,3 +130,34 @@ function educloud_portal_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+function educloud_portal_preprocess_links__system_secondary_menu(&$vars) {
+  global $user;
+  $user_profile = cache_get('user_profile_' . $user->uid);
+  if (empty($user_profile)) {
+    $user_profile = educloudalliance_portal_user_profile_set_user_cache($user->uid);
+  }
+  $vars['user_profile'] = $user_profile->data;
+}
+
+function educloud_portal_links__system_secondary_menu($vars) {
+  $output = '<div id="user-button">';
+  $first_link_data = array_shift($vars['links']);
+  $user_profile = $vars['user_profile'];
+  if (user_is_logged_in()) {
+    $image = theme_image_style($vars['user_profile']['picture']);
+    $links = array(
+      l(t('My account'), 'user'),
+      l(t('Log out'), 'user/logout')
+    );
+    $output .= '<div id="user-button-image">' . $image . '</div>';
+    $output .= '<div id="user-button-name">' . $vars['user_profile']['name'] . '</div>';
+    $output .= '<div id="user-button-role">' . $vars['user_profile']['role'] . '</div>';
+    $output .= '<div class="menu-button-menu">';
+    $output .= theme('item_list', array('items' => $links));
+    $output .= '</div>';
+  }
+  $output .= '</div>';
+  return $output;
+}
+

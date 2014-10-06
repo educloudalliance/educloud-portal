@@ -5,3 +5,49 @@
  */
 
 include_once 'educloudalliance_portal_user_profile.features.inc';
+
+function educloudalliance_portal_user_profile_set_user_cache($account) {
+  $uid = $account->uid;
+  $profile = profile2_load_by_user($uid);
+  $user_profile = array();
+  if (!empty($profile['contact_info']->field_full_name[LANGUAGE_NONE][0]['safe_value'])) {
+    $user_profile['name'] = $profile['contact_info']->field_full_name[LANGUAGE_NONE][0]['safe_value'];
+  }
+  else {
+    $user_profile['name'] = $account->name;
+  }
+
+  $user_profile['picture'] = array(
+    'style_name' => 'menu_button_thumb',
+    'path' => NULL,
+    'width' => 32,
+    'height' => 32,
+  );
+  if (!empty($profile['contact_info']->field_profile_picture[LANGUAGE_NONE][0])) {
+    $picture = $profile['contact_info']->field_profile_picture[LANGUAGE_NONE][0];
+    $user_profile['picture']['path'] = $picture['uri'];
+    $user_profile['picture']['width'] = $picture['width'];
+    $user_profile['picture']['height'] = $picture['height'];
+  }
+
+  if (!empty($profile['contact_info']->field_role[LANGUAGE_NONE][0]['safe_value'])) {
+    $user_profile['role'] = $profile['contact_info']->field_role[LANGUAGE_NONE][0]['safe_value'];
+  }
+  else {
+    $user_profile['role'] = NULL;
+  }
+  cache_set('user_profile_' . $uid, $user_profile);
+  return $user_profile;
+}
+
+function educloudalliance_portal_user_profile_user_login(&$edit, $account) {
+  educloudalliance_portal_user_profile_set_user_cache($account);
+}
+
+function educloudalliance_portal_user_profile_user_update(&$edit, $account, $category) {
+  educloudalliance_portal_user_profile_set_user_cache($account);
+}
+
+function educloudalliance_portal_user_profile_user_logout($account) {
+  cache_clear_all('user_profile_' . $account->uid, 'cache');
+}

@@ -60,7 +60,7 @@ $zen-auto-include-item-base: false;
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: $nav-height;
-    position: relative;
+//    position: relative;
   }
   #navigation {
     /* Move the navbar up inside #main's padding. */
