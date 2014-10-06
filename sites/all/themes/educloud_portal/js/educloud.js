@@ -16,8 +16,12 @@
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.menu_button = {
   attach: function(context, settings) {
-    $('#user-button').on('click', function() {
+    $('#user-button').on('click', function(e) {
       $('.menu-button-menu').toggle();
+      e.stopPropagation();
+    });
+    $('html').on('click', function() {
+      $('.menu-button-menu').hide();
     });
   }
 };
