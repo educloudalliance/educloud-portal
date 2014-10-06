@@ -14,11 +14,11 @@
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
+Drupal.behaviors.menu_button = {
   attach: function(context, settings) {
-
-    // Place your code here.
-
+    $('#user-button').on('click', function() {
+      $('.menu-button-menu').toggle();
+    });
   }
 };
 
