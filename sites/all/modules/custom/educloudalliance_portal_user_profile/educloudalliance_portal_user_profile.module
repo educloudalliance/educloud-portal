@@ -6,6 +6,13 @@
 
 include_once 'educloudalliance_portal_user_profile.features.inc';
 
+/**
+ * Sets cache for user profile2 fields.
+ *
+ * @param object $account User account to cache.
+ *
+ * @return array Cached data.
+ */
 function educloudalliance_portal_user_profile_set_user_cache($account) {
   $uid = $account->uid;
   $profile = profile2_load_by_user($uid);
@@ -40,14 +47,23 @@ function educloudalliance_portal_user_profile_set_user_cache($account) {
   return $user_profile;
 }
 
+/**
+ * Implements hook_user_login(). Sets per user cache on user login.
+ */
 function educloudalliance_portal_user_profile_user_login(&$edit, $account) {
   educloudalliance_portal_user_profile_set_user_cache($account);
 }
 
+/*
+ * Implements hook_user_update(). Sets per user cache on user update.
+ */
 function educloudalliance_portal_user_profile_user_update(&$edit, $account, $category) {
   educloudalliance_portal_user_profile_set_user_cache($account);
 }
 
+/**
+ * Implements hook_user_logout(). Clears per user cache on user logout.
+ */
 function educloudalliance_portal_user_profile_user_logout($account) {
   cache_clear_all('user_profile_' . $account->uid, 'cache');
 }
