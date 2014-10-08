@@ -75,7 +75,8 @@
 
 .view-frontpage-news {
   float: left;
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   padding-left: 2em;
   margin-bottom: 40px;
 }
@@ -110,7 +111,8 @@
 }
 
 .view-frontpage-cloud-logo {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   content: " ";
   height: 15em;
   float: left;
@@ -139,7 +141,7 @@
 }
 
 .view-frontpage-who-and-why .attachment {
-  width: 600px;
+  width: 100%;
   max-width: 600px;
   min-height: 18em;
   float:left;
@@ -288,6 +290,9 @@
   #block-views-frontpage-who-and-why-block h2 {
       color: #000000;
   }
+  #block-views-frontpage-bazaar-items-block {
+      margin-left: 0 !important;
+  }
   #who-and-why {
       padding-bottom: 30px;
   }
@@ -295,6 +300,9 @@
 @include breakpoint('mini-tablet') {
   #block-views-frontpage-who-and-why-block h2 {
       color: #000000;
+  }
+  #block-views-frontpage-bazaar-items-block {
+      margin-left: 0 !important;
   }
   #who-and-why {
       padding-bottom: 30px;
@@ -306,6 +314,9 @@
   }
   #who-and-why {
       padding-bottom: 30px;
+  }
+  #block-views-frontpage-bazaar-items-block {
+      margin-left: 0 !important;
   }
 }
 
