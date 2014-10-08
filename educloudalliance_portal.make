@@ -7,6 +7,8 @@ defaults[projects][subdir] = "contrib"
 ; Modules
 projects[ctools][version] = "1.4"
 
+projects[context][version] = "3.3"
+
 projects[entity][version] = "1.5"
 
 projects[features][version] = "2.2"
