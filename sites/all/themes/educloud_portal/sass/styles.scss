@@ -159,7 +159,7 @@
 #block-views-frontpage-bazaar-items-block, #block-views-frontpage-feature-wishes-block, #block-views-frontpage-qa-block {
     display: inline-block;
     max-width: 344px;
-    position: relative;
+    float:left;
 }
 
 #block-views-frontpage-bazaar-items-block {
