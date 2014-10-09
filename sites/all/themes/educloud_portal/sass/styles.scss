@@ -111,15 +111,16 @@
 }
 
 .view-frontpage-cloud-logo {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   content: " ";
   height: 15em;
   float: left;
-  background-image: url('../images/openalliance-cloud.png');
+  background-image: url('../images/educloud_alliance_logo.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-right: 70px;
 }
 
 #block-views-frontpage-who-and-why-block {
@@ -297,6 +298,11 @@
   #who-and-why {
       padding-bottom: 30px;
   }
+  #navigation a {
+      font-size: 1em !important;
+      line-height: 3.9em;
+      padding: 1em;
+  }
 }
 @include breakpoint('mini-tablet') {
   #block-views-frontpage-who-and-why-block h2 {
@@ -308,6 +314,11 @@
   #who-and-why {
       padding-bottom: 30px;
   }
+  #navigation a {
+      font-size: 1em !important;
+      line-height: 3.9em;
+      padding: 1em;
+  }
 }
 @include breakpoint('phone') {
   #block-views-frontpage-who-and-why-block h2 {
@@ -318,6 +329,11 @@
   }
   #block-views-frontpage-bazaar-items-block {
       margin-left: 0 !important;
+  }
+  #navigation a {
+      font-size: 1em !important;
+      line-height: 3.9em;
+      padding: 1em;
   }
 }
 
