@@ -1939,20 +1939,20 @@ tr.selected td {
   float: left;
   max-width: 570px;
   width: 100%;
-  /*background-color: rgba(146, 222, 248, 1);*/
 }
 
-/* line 159, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 #block-views-frontpage-bazaar-items-block, #block-views-frontpage-feature-wishes-block, #block-views-frontpage-qa-block {
   display: inline-block;
   max-width: 344px;
   float: left;
 }
 
-/* line 165, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 #block-views-frontpage-bazaar-items-block {
   margin-left: 15px;
   margin-right: 50px;
+  clear: left;
 }
 
 /* line 170, ../sass/styles.scss */
