@@ -9,3 +9,61 @@ include_once 'educloudalliance_portal_configuration.features.inc';
  * @file
  * Module functions for configuration module.
  */
+
+/**
+ * Implements hook_menu().
+ */
+function educloudalliance_portal_configuration_menu() {
+
+  $items['json/bazaar'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => '_serve_json',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+  );
+
+  $items['json/wishes'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => '_serve_json',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+  );
+
+  $items['json/qa'] = array(
+    'type' => MENU_CALLBACK,
+    'page callback' => '_serve_json',
+    'page arguments' => array(1),
+    'access callback' => TRUE,
+  );
+
+  return $items;
+}
+
+function _serve_json($request) {
+  $data = variable_get('frontpage_test_json_' . $request);
+  if (empty($data)) {
+    switch ($request) {
+      case 'bazaar':
+        $data = array(
+          array('id' => 1, 'title' => 'Bazaar product 1'),
+        );
+        break;
+      case 'wishes':
+        $data =  array(
+            array('postid' => 1, 'title' => 'Wish 1'),
+            array('postid' => 2, 'title' => 'Wish 2'),
+            array('postid' => 3, 'title' => 'Wish 3'),
+        );
+
+        break;
+      case 'qa':
+        $data = array(
+            array('postid' => 1, 'title' => 'Question 1'),
+            array('postid' => 2, 'title' => 'Question 2'),
+            array('postid' => 3, 'title' => 'Question 3'),
+        );
+    }
+    variable_set('frontpage_test_json_' . $request, $data);
+  }
+  return drupal_json_output($data);
+}
