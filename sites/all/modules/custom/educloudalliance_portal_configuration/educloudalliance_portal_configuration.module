@@ -39,6 +39,9 @@ function educloudalliance_portal_configuration_menu() {
   return $items;
 }
 
+/**
+ * Return JSON out of predefined testing variables.
+ */
 function _serve_json($request) {
   $data = variable_get('frontpage_test_json_' . $request);
   if (empty($data)) {
@@ -67,3 +70,14 @@ function _serve_json($request) {
   }
   return drupal_json_output($data);
 }
+
+/**
+ * Implements hook_views_default_views_alter(). Fixes json uris for frontpage blocks.
+ */
+function educloudalliance_portal_configuration_views_default_views_alter(&$view) {
+  $url = url('', array('absolute' => TRUE));
+  $view['frontpage_feature_wishes']->display['default']->display_options['query']['options']['json_file'] = $url . '/json/wishes';
+  $view['frontpage_qa']->display['default']->display_options['query']['options']['json_file'] = $url . '/json/qa';
+  $view['frontpage_bazaar_items']->display['default']->display_options['query']['options']['json_file'] = $url . '/json/bazaar';
+}
+
