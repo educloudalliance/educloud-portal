@@ -11,6 +11,7 @@ dependencies[] = menu
 dependencies[] = responsive_menus
 dependencies[] = strongarm
 dependencies[] = views
+dependencies[] = views_json_query
 features[context][] = educloudalliance_portal_footer_block
 features[context][] = frontpage-blocks
 features[ctools][] = context:context:3
