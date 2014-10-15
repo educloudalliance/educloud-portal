@@ -407,7 +407,7 @@ function features_detect_overrides($module) {
     foreach ($states[$module->name] as $component => $state) {
       if ($state != FEATURES_DEFAULT) {
         $normal = features_get_normal($component, $module->name);
-        $default = features_get_default($component, $module->name);
+        $default = features_get_default_explicit($component, $module->name);
         _features_sanitize($normal);
         _features_sanitize($default);
 
@@ -656,7 +656,7 @@ function features_get_signature($state = 'default', $module_name, $component, $r
       $codecache = variable_get('features_codecache', array());
       return isset($codecache[$module_name][$component]) ? $codecache[$module_name][$component] : FALSE;
     case 'default':
-      $objects = features_get_default($component, $module_name, TRUE, $reset);
+      $objects = features_get_default_explicit($component, $module_name, TRUE, $reset);
       break;
     case 'normal':
       $objects = features_get_normal($component, $module_name, $reset);
@@ -811,6 +811,33 @@ function features_get_default($component, $module_name = NULL, $alter = TRUE, $r
     }
   }
   return $all_defaults;
+}
+
+/**
+ * Get explicitly declared defaults for a given module/component pair.
+ */
+function features_get_default_explicit($component, $module_name = NULL, $alter = TRUE, $reset = FALSE) {
+  $objects = features_get_default($component, $module_name, $alter, $reset);
+  // Restrict altered defaults to those explicitly provided by module.
+  if (!empty($objects) && is_array($objects) && features_get_default_alter_hook($component)) {
+    $module = features_get_features($module_name);
+    if (empty($module->info['features'][$component])) {
+      $objects = array();
+    }
+    else {
+      // Keep track of version if it was added to default feature definition.
+      $version = '';
+      if (isset($objects['version'])) {
+        $version = $objects['version'];
+      }
+      $objects = array_intersect_key($objects, drupal_map_assoc($module->info['features'][$component]));
+      // Add back version if it was stripped.
+      if (!isset($objects['version']) && !empty($version)) {
+        $objects['version'] = $version;
+      }
+    }
+  }
+  return $objects;
 }
 
 /**
