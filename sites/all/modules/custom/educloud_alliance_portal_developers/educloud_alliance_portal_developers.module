@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Educloud Alliance Portal developers feature.
- */
-
-include_once 'educloud_alliance_portal_developers.features.inc';
