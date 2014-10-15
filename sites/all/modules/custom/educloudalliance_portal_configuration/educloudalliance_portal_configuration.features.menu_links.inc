@@ -50,26 +50,6 @@ function educloudalliance_portal_configuration_menu_default_menu_links() {
     'weight' => -45,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_developers:http://www.github.com/koulutuksenpilvivayla
-  $menu_links['main-menu_developers:http://www.github.com/koulutuksenpilvivayla'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'http://www.github.com/koulutuksenpilvivayla',
-    'router_path' => '',
-    'link_title' => 'Developers',
-    'options' => array(
-      'attributes' => array(
-        'title' => '',
-      ),
-      'identifier' => 'main-menu_developers:http://www.github.com/koulutuksenpilvivayla',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 1,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -46,
-    'customized' => 1,
-  );
   // Exported menu link: main-menu_home:<front>
   $menu_links['main-menu_home:<front>'] = array(
     'menu_name' => 'main-menu',
@@ -111,7 +91,6 @@ function educloudalliance_portal_configuration_menu_default_menu_links() {
   // Included for use with string extractors like potx.
   t('Bazaar');
   t('Consortium');
-  t('Developers');
   t('Home');
   t('QA - ask');
 
