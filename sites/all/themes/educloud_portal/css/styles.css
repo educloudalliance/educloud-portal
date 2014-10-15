@@ -2246,3 +2246,18 @@ tr.selected td {
   max-height: 1.5em;
   line-height: 1em !important;
 }
+
+/* line 414, ../sass/styles.scss */
+.mean-container .mean-bar {
+  background-color: #00aeef;
+}
+
+/* line 418, ../sass/styles.scss */
+.mean-container .mean-nav ul li a {
+  background-color: #00aeef;
+}
+
+/* line 422, ../sass/styles.scss */
+.mean-container .mean-nav ul li a:hover {
+  background-color: #ff8533;
+}
