@@ -56,3 +56,11 @@ function educloudalliance_portal_deploy_update_7003() {
   features_revert();
 }
 
+/**
+ * Revert and rebuild features.
+ */
+function educloudalliance_portal_deploy_update_7004() {
+  features_rebuild();
+  features_revert();
+}
+
