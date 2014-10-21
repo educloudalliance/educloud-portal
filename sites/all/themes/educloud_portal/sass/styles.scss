@@ -66,6 +66,18 @@
   clear: none;
 }
 
+div#pre-footer-image {
+  float: right;
+}
+
+#main article {
+  clear: left;
+}
+
+#main article header {
+  display: none;
+}
+
 .mean-container .mean-bar {
     background: none repeat scroll 0 0 #00aeef;
 }

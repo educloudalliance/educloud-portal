@@ -98,6 +98,9 @@ unset($page['content']['system_main']['default_message']);
       <?php print $messages; ?>
       <?php print render($page['content']); ?>
     </div>
+    <div id="pre-footer-image">
+      <img src="<?php print url(drupal_get_path('theme', 'educloud_portal')); ?>/images/MinistryLogo_small.jpeg" />
+    </div>
 
   </div>
 </div>

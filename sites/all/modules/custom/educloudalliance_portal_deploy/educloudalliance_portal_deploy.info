@@ -7,3 +7,5 @@ core = 7.x
 files[] = tests/educloudalliance_portal_deploy.test
 
 dependencies[] = educloudalliance_portal_configuration
+dependencies[] = educloudalliance_portal_developers
+dependencies[] = educloudalliance_portal_user_profile
