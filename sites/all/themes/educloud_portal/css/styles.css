@@ -1986,7 +1986,11 @@ div#pre-footer-image {
   margin-right: 50px;
 }
 
+<<<<<<< HEAD
+/* line 183, ../sass/styles.scss */
+=======
 /* line 195, ../sass/styles.scss */
+>>>>>>> master
 #block-views-frontpage-bazaar-items-block .block__title.block-title,
 #block-views-frontpage-feature-wishes-block .block__title.block-title,
 #block-views-frontpage-qa-block .block__title.block-title {
@@ -2039,7 +2043,11 @@ div#pre-footer-image {
   margin-top: -15px;
 }
 
+<<<<<<< HEAD
+/* line 229, ../sass/styles.scss */
+=======
 /* line 241, ../sass/styles.scss */
+>>>>>>> master
 #block-views-frontpage-bazaar-items-block .views-field.views-field-title,
 #block-views-frontpage-feature-wishes-block .views-field.views-field-title,
 #block-views-frontpage-qa-block .views-field.views-field-title {
@@ -2054,14 +2062,22 @@ div#pre-footer-image {
   text-align: left;
 }
 
+<<<<<<< HEAD
+/* line 243, ../sass/styles.scss */
+=======
 /* line 255, ../sass/styles.scss */
+>>>>>>> master
 #block-views-frontpage-bazaar-items-block .field-content,
 #block-views-frontpage-feature-wishes-block .field-content,
 #block-views-frontpage-qa-block .field-content {
   /*padding-left: 15px;*/
 }
 
+<<<<<<< HEAD
+/* line 249, ../sass/styles.scss */
+=======
 /* line 261, ../sass/styles.scss */
+>>>>>>> master
 #block-views-frontpage-bazaar-items-block .field-content > a,
 #block-views-frontpage-feature-wishes-block .field-content > a,
 #block-views-frontpage-qa-block .field-content > a {
@@ -2125,7 +2141,11 @@ div#pre-footer-image {
     color: #000000;
   }
 
+<<<<<<< HEAD
+  /* line 304, ../sass/styles.scss */
+=======
   /* line 316, ../sass/styles.scss */
+>>>>>>> master
   #block-views-frontpage-bazaar-items-block,
   #block-views-frontpage-feature-wishes-block,
   #block-views-frontpage-qa-block {
@@ -2161,7 +2181,11 @@ div#pre-footer-image {
     color: #000000;
   }
 
+<<<<<<< HEAD
+  /* line 329, ../sass/styles.scss */
+=======
   /* line 341, ../sass/styles.scss */
+>>>>>>> master
   #block-views-frontpage-bazaar-items-block,
   #block-views-frontpage-feature-wishes-block,
   #block-views-frontpage-qa-block {
@@ -2225,7 +2249,11 @@ div#pre-footer-image {
     font-size: 25px;
   }
 
+<<<<<<< HEAD
+  /* line 373, ../sass/styles.scss */
+=======
   /* line 385, ../sass/styles.scss */
+>>>>>>> master
   #block-views-frontpage-bazaar-items-block,
   #block-views-frontpage-feature-wishes-block,
   #block-views-frontpage-qa-block {
@@ -2336,17 +2364,29 @@ div#pre-footer-image {
   line-height: 1em !important;
 }
 
+<<<<<<< HEAD
+/* line 467, ../sass/styles.scss */
+=======
 /* line 479, ../sass/styles.scss */
+>>>>>>> master
 .mean-container .mean-bar {
   background-color: #00aeef;
 }
 
+<<<<<<< HEAD
+/* line 471, ../sass/styles.scss */
+=======
 /* line 483, ../sass/styles.scss */
+>>>>>>> master
 .mean-container .mean-nav ul li a {
   background-color: #00aeef;
 }
 
+<<<<<<< HEAD
+/* line 475, ../sass/styles.scss */
+=======
 /* line 487, ../sass/styles.scss */
+>>>>>>> master
 .mean-container .mean-nav ul li a:hover {
   background-color: #ff8533;
 }
