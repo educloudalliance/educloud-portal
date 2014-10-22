@@ -6,6 +6,13 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728208
  */
+
+if (drupal_is_front_page()) {
+  $parts = explode('|', $head_title);
+  $parts[0] = t('Home');
+  $head_title = $parts[0] . ' | ' . $parts[1];
+}
+
 ?><!DOCTYPE html>
 <!--[if IEMobile 7]><html class="iem7" <?php print $html_attributes; ?>><![endif]-->
 <!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
