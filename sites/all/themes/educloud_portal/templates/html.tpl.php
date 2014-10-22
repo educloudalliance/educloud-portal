@@ -48,6 +48,9 @@ if (drupal_is_front_page()) {
     <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
     <![endif]-->
   <?php endif; ?>
+  <meta property="og:title" content="EduCloud Alliance">
+  <meta property="og:description" content="EduCloud on tapa hankkia laadukkaita digitaalisia oppimateriaaleja helposti. Tavoitteena on helpottaa ja tukea opettajien työtä sekä auttaa heitä ottamaan tieto- ja viestintätekniikka entistä monipuolisemmin käyttöön opetuksessa.">
+  <meta property="og:image" content="https://portal.educloudalliance.org/sites/all/themes/educloud_portal/images/educloud_alliance_logo.png">
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
