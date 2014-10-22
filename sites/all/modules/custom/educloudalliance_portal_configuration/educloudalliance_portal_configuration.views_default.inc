@@ -39,7 +39,7 @@ function educloudalliance_portal_configuration_views_default_views() {
   $handler->display->display_options['empty']['area']['empty'] = TRUE;
   $handler->display->display_options['empty']['area']['content'] = '<div id="contact-info-footer">
 <h2></h2>
-<p> </p>
+<p>EduCloud on Opetus- ja kulttuuriministeriön tukema hanke</p>
 </div>';
   $handler->display->display_options['empty']['area']['format'] = 'full_html';
   /* Field: Global: Custom text */
@@ -49,7 +49,7 @@ function educloudalliance_portal_configuration_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div id="contact-info-footer">
 <h2></h2>
-<p> </p>
+<p>EduCloud on Opetus- ja kulttuuriministeriön tukema hanke</p>
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
