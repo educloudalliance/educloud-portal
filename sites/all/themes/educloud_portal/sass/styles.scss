@@ -233,9 +233,10 @@ div#pre-footer-image {
 }
 
 #contact-info-footer > p {
-    font-weight: 700;
     margin-left: 40px;
     margin-top: -15px;
+    float:right;
+    font-size: 9pt;
 }
 
 #block-views-frontpage-bazaar-items-block .views-field.views-field-title,
@@ -491,4 +492,8 @@ div#pre-footer-image {
 body.front article.node-7 {
   max-width: 70%;
   margin: 0 auto;
+}
+
+article.node {
+  max-width: 70%;
 }
