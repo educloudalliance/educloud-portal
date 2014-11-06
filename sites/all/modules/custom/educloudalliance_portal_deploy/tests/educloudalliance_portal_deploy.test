@@ -24,8 +24,8 @@ class EduCloudPortalDeployTestCase extends DrupalWebTestCase {
 
     // Test top bar links from 2 different features
     $this->assertLink('Contact');
-    $this->assertLink('Bazaar');
-    $this->assertLink('Developers');
+    //$this->assertLink('Bazaar');
+    //$this->assertLink('Developers');
 
     // Check theme settings.
     $this->assertNoRaw('id="logo"');
