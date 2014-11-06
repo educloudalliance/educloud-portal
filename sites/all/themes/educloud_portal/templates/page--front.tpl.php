@@ -89,6 +89,8 @@ unset($page['content']['system_main']['default_message']);
 
   </header>
 
+  <div class="site-top"></div>
+  
   <div id="main">
 
     <div id="content" class="column" role="main">

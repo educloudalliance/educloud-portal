@@ -24,9 +24,25 @@
 /* @import "theme-A"; */
 /* @import "theme-B"; */
 
+#page {
+  max-width: 100%;
+}
+
 #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer {
    padding-left: 0;
    padding-right: 0;
+}
+
+.header,
+#main {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.site-top {
+    background: url("../images/educloud_top_cloud_bg.png") no-repeat scroll right center / 100% auto rgba(0, 0, 0, 0);
+    height: 425px;
+    width: 100%;
 }
 
 .toolbar #navigation {
@@ -334,6 +350,9 @@ div#pre-footer-image {
   #login {
     float: left !important;
   }
+  .site-top {
+      height: 200px;
+  }
 }
 @include breakpoint('mini-tablet') {
   #block-views-frontpage-who-and-why-block h2 {
@@ -363,7 +382,9 @@ div#pre-footer-image {
   #top-bar {
       display: none !important;
   }
-  
+  .site-top {
+      height: 189px;
+  }
 }
 @include breakpoint('phone') {
   #block-views-frontpage-who-and-why-block h2 {
@@ -400,6 +421,9 @@ div#pre-footer-image {
   }
   #top-bar {
       display: none !important;
+  }
+  .site-top {
+      height: 100px;
   }
 }
 
@@ -496,4 +520,13 @@ body.front article.node-7 {
 
 article.node {
   max-width: 70%;
+}
+
+#main-menu .first {
+  background: url("../images/home_button.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+#main-menu .first a,
+#main-menu .first .active {
+  color: rgba(0, 0, 0, 0);
 }
