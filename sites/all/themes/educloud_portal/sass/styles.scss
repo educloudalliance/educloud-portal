@@ -35,8 +35,12 @@
 
 .header,
 #main {
-    margin: 0 auto;
-    max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#main {
+  padding-top: 2em;
 }
 
 .site-top {
@@ -112,10 +116,16 @@ div#pre-footer-image {
 
 .view-frontpage-news {
   float: left;
-  max-width: 450px;
+  max-width: 340px;
   width: 100%;
   padding-left: 2em;
   margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.view-frontpage-news .view-header {
+    margin-top: 20px;
 }
 
 .view-frontpage-news .view-content {
@@ -123,28 +133,20 @@ div#pre-footer-image {
 }
 
 .view-frontpage-news h1 {
-  font-family: 'Dosis', sans-serif;
-  font-size: 50pt;
-  font-weight: 200;
-  text-align: center;
-  color: #ff8533;
-  border-bottom: 5px solid #eee;
-  text-transform: uppercase;
+  color: #575757;
+  font-family: "Dosis",sans-serif;
+  font-size: 23pt;
+  font-weight: 400;
   line-height: normal;
   margin-top: 0;
-  padding-bottom: 0.3em;
-
+  padding-bottom: 0;
 }
 
 .view-frontpage-news .views-field-title {
-  padding-left: 34px;
-  min-height: 34px;
-  padding-left: 3em;
-  margin-bottom: 1em;
-  background-image: url('../images/cloud-bullet.png');
-  background-repeat: no-repeat;
-  background-position: center left;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 0;
+  padding-left: 15px;
 }
 
 .view-frontpage-cloud-logo {
@@ -353,6 +355,9 @@ div#pre-footer-image {
   .site-top {
       height: 200px;
   }
+  #main {
+    padding-left: 25px;
+  }
 }
 @include breakpoint('mini-tablet') {
   #block-views-frontpage-who-and-why-block h2 {
@@ -384,6 +389,12 @@ div#pre-footer-image {
   }
   .site-top {
       height: 189px;
+  }
+  #main {
+    padding-left: 25px;
+  }
+  #twitter-widget-0 {
+    margin-top: 125px;
   }
 }
 @include breakpoint('phone') {
@@ -424,6 +435,9 @@ div#pre-footer-image {
   }
   .site-top {
       height: 100px;
+  }
+  #twitter-widget-0 {
+    margin-top: 125px;
   }
 }
 
@@ -529,4 +543,113 @@ article.node {
 #main-menu .first a,
 #main-menu .first .active {
   color: rgba(0, 0, 0, 0);
+}
+
+.front-h1 {
+  color: #505050;
+  font-family: "Droid Sans",sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: 1;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.front .node-article {
+  float: left;
+  max-width: 378px;
+}
+
+.front .node-article span {
+  font-weight: bold;
+}
+
+.views-field.views-field-created {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #575757;
+}
+
+.view-frontpage-news .field-content a {
+    color: #f35d3a;
+    text-decoration: none;
+}
+
+.view-frontpage-news li {
+    color: #51aee5;
+    margin-bottom: 10px;
+    max-width: 265px;
+}
+
+.view-educloud-frontpage-featured-articles {
+  display: inline-block;
+}
+
+.view-educloud-frontpage-featured-articles .views-row.views-row-1 {
+  max-width: 411px;
+  display: inline-block;
+}
+
+.view-educloud-frontpage-featured-articles .views-row.views-row-2 {
+  max-width: 390px;
+  display: inline-block;
+}
+
+.view-educloud-frontpage-featured-articles .views-row.views-row-3 {
+  max-width: 390px;
+  display: inline-block;
+}
+
+.view-educloud-frontpage-featured-articles p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#bazaar-front-bottom {
+    background: url("../images/bazaar_logo.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    height: 250px;
+    margin-right: 45px;
+}
+
+#get-inspired-front-bottom {
+    background: url("../images/inspired_logo.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    height: 250px;
+}
+
+#know-how-front-bottom {
+    background: url("../images/knowhow_logo.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    height: 250px;
+}
+
+.front-featured-bottom-txt {
+    padding-top: 100px;
+}
+
+#bazaar-front-bottom .front-featured-bottom-txt p {
+    max-width: 320px;
+    padding-top: 35px !important;
+}
+
+#bazaar-front-bottom .front-featured-bottom-txt {
+    padding-top: 75px;
+}
+
+#get-inspired-front-bottom .front-featured-bottom-txt p {
+    margin-right: 40px;
+    max-width: 347px;
+}
+
+#know-how-front-bottom .front-featured-bottom-txt p {
+    max-width: 310px;
+}
+
+.readmore {
+    /*background: url("../images/readmore_bg.png") no-repeat scroll left top rgba(0, 0, 0, 0);*/
+    height: 43px;
+}
+
+#block-twitter-block-1 .block__title.block-title {
+    display: none;
 }
