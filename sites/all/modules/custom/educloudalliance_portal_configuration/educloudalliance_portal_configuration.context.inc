@@ -54,23 +54,41 @@ function educloudalliance_portal_configuration_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
+        'views-frontpage_cloud_logo-block' => array(
+          'module' => 'views',
+          'delta' => 'frontpage_cloud_logo-block',
+          'region' => 'content',
+          'weight' => '-11',
+        ),
         'views-frontpage_news-block' => array(
           'module' => 'views',
           'delta' => 'frontpage_news-block',
           'region' => 'content',
-          'weight' => '1',
+          'weight' => '-10',
         ),
-        'views-79e65907fe41ce778925f5308db3e5b4' => array(
+        'views-frontpage_who_and_why-block' => array(
           'module' => 'views',
-          'delta' => '79e65907fe41ce778925f5308db3e5b4',
+          'delta' => 'frontpage_who_and_why-block',
           'region' => 'content',
-          'weight' => '3',
+          'weight' => '-9',
         ),
-        'twitter_block-1' => array(
-          'module' => 'twitter_block',
-          'delta' => '1',
+        'views-frontpage_bazaar_items-block' => array(
+          'module' => 'views',
+          'delta' => 'frontpage_bazaar_items-block',
           'region' => 'content',
-          'weight' => '2',
+          'weight' => '-8',
+        ),
+        'views-frontpage_feature_wishes-block' => array(
+          'module' => 'views',
+          'delta' => 'frontpage_feature_wishes-block',
+          'region' => 'content',
+          'weight' => '-7',
+        ),
+        'views-frontpage_qa-block' => array(
+          'module' => 'views',
+          'delta' => 'frontpage_qa-block',
+          'region' => 'content',
+          'weight' => '-6',
         ),
       ),
     ),
