@@ -16,7 +16,8 @@ class EduCloudPortalDeployTestCase extends DrupalWebTestCase {
   }
 
   public function setUp() {
-    parent::setup('educloudalliance_portal_deploy');
+    parent::setup('views');
+    module_enable(array('educloudalliance_portal_deploy'));
   }
 
   public function testFrontPage() {
