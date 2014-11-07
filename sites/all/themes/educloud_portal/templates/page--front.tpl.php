@@ -98,6 +98,7 @@ unset($page['content']['system_main']['default_message']);
       <?php print $breadcrumb; ?>
       <a id="main-content"></a>
       <?php print $messages; ?>
+      <h1 class="front-h1"><?php print $title; ?></h1>
       <?php print render($page['content']); ?>
     </div>
     <div id="pre-footer-image">
