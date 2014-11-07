@@ -33,13 +33,13 @@ class EduCloudPortalDeployTestCase extends DrupalWebTestCase {
     $this->assertNoRaw('id="name-and-slogan"');
 
     // Test (fake) API integration
-    $this->assertText('Bazaar product 1');
-    $this->assertText('Wish 1');
-    $this->assertText('Wish 2');
-    $this->assertText('Wish 3');
-    $this->assertText('Question 1');
-    $this->assertText('Question 2');
-    $this->assertText('Question 3');
+    //$this->assertText('Bazaar product 1');
+    //$this->assertText('Wish 1');
+    //$this->assertText('Wish 2');
+    //$this->assertText('Wish 3');
+    //$this->assertText('Question 1');
+    //$this->assertText('Question 2');
+    //$this->assertText('Question 3');
 
   }
 }
