@@ -71,3 +71,10 @@ function educloudalliance_portal_deploy_update_7005() {
   module_disable(array('node_export_features', 'node_export'));
   drupal_uninstall_modules(array('node_export_features', 'node_export'));
 }
+
+/**
+ * Enable FE block and Twitter block modules.
+ */
+function educloudalliance_portal_deploy_update_7006() {
+  module_enable(array('fe_block', 'twitter_block'));
+}
