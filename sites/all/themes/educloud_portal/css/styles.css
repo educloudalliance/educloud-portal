@@ -2560,6 +2560,6 @@ article.node {
 }
 
 /* line 653, ../sass/styles.scss */
-#block-twitter-block-1 .block__title.block-title {
+.block-twitter-block .block__title.block-title {
   display: none;
 }

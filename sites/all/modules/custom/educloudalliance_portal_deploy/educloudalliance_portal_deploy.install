@@ -78,3 +78,17 @@ function educloudalliance_portal_deploy_update_7005() {
 function educloudalliance_portal_deploy_update_7006() {
   module_enable(array('fe_block', 'twitter_block'));
 }
+
+/**
+ * Insert new Twitter Block block
+ */
+function educloudalliance_portal_deploy_update_7007() {
+  db_insert('twitter_block')
+    ->fields(array(
+    'info' => 'Educloud twitter timeline widget',
+    'widget_id' => '531783473262903296',
+    'username' => 'twitter',
+    'data' => 'a:10:{s:5:"theme";s:0:"";s:10:"link_color";s:0:"";s:5:"width";s:3:"340";s:6:"height";s:3:"460";s:6:"chrome";a:5:{s:8:"noheader";i:0;s:8:"nofooter";i:0;s:9:"noborders";i:0;s:11:"noscrollbar";i:0;s:11:"transparent";i:0;}s:12:"border_color";s:0:"";s:8:"language";s:2:"fi";s:11:"tweet_limit";s:0:"";s:7:"related";s:0:"";s:6:"polite";s:6:"polite";}',
+  ))
+  ->execute();
+}
