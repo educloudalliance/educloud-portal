@@ -32,6 +32,17 @@ function educloudalliance_portal_configuration_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -47,6 +58,13 @@ function educloudalliance_portal_configuration_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
+  $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['label'] = '';
+  $handler->display->display_options['fields']['field_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_link']['click_sort_column'] = 'url';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -63,7 +81,7 @@ function educloudalliance_portal_configuration_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'article' => 'article',
+    'educloud_featured_articles' => 'educloud_featured_articles',
   );
   /* Filter criterion: Content: Promoted to front page */
   $handler->display->display_options['filters']['promote']['id'] = 'promote';
@@ -158,7 +176,7 @@ function educloudalliance_portal_configuration_views_default_views() {
     'default' => 0,
   );
   $export['educloudalliance_portal_footer_block'] = $view;
-
+  
   $view = new view();
   $view->name = 'frontpage_bazaar_items';
   $view->description = '';
@@ -249,7 +267,7 @@ function educloudalliance_portal_configuration_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $export['frontpage_cloud_logo'] = $view;
-
+  
   $view = new view();
   $view->name = 'frontpage_feature_wishes';
   $view->description = '';
@@ -293,7 +311,7 @@ function educloudalliance_portal_configuration_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $export['frontpage_feature_wishes'] = $view;
-
+  
   $view = new view();
   $view->name = 'frontpage_news';
   $view->description = '';
@@ -374,7 +392,7 @@ function educloudalliance_portal_configuration_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $export['frontpage_news'] = $view;
-
+  
   $view = new view();
   $view->name = 'frontpage_qa';
   $view->description = '';
@@ -418,6 +436,5 @@ function educloudalliance_portal_configuration_views_default_views() {
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $export['frontpage_qa'] = $view;
-  
   return $export;
 }
