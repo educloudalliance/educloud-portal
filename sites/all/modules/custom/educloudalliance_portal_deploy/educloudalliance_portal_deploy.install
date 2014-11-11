@@ -92,3 +92,10 @@ function educloudalliance_portal_deploy_update_7007() {
   ))
   ->execute();
 }
+
+/**
+ * Enable Link module.
+ */
+function educloudalliance_portal_deploy_update_7008() {
+  module_enable(array('link'));
+}
