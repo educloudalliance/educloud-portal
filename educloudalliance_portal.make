@@ -29,3 +29,4 @@ projects[twitter_block][version] = "2.2"
 
 projects[views][version] = "3.8"
 
+projects[link][version] = "1.3"
