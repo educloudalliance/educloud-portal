@@ -41,6 +41,7 @@
 
 #main {
   padding-top: 2em;
+  padding-left: 70px;
 }
 
 .site-top {
@@ -286,7 +287,7 @@ div#pre-footer-image {
 }
 
 .front .views-row.views-row-1.views-row-odd.views-row-first {
-    margin-top: 20px;
+    margin-right: 30px;
 }
 
 .view-contact .views-row {
@@ -588,19 +589,27 @@ article.node {
 }
 
 .view-educloud-frontpage-featured-articles .views-row.views-row-1 {
-  max-width: 411px;
+  max-width: 380px;
   display: inline-block;
 }
 
 .view-educloud-frontpage-featured-articles .views-row.views-row-2 {
-  max-width: 390px;
   display: inline-block;
+  margin-right: 45px;
+  max-width: 360px;
 }
 
 .view-educloud-frontpage-featured-articles .views-row.views-row-3 {
   max-width: 390px;
   display: inline-block;
 }
+
+
+.views-row-1 .front-featured-bottom-txt {
+    max-width: 305px;
+}
+
+
 
 .view-educloud-frontpage-featured-articles p {
   font-size: 16px;
@@ -624,7 +633,8 @@ article.node {
 }
 
 .front-featured-bottom-txt {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
+    max-width: 330px;
 }
 
 #bazaar-front-bottom .front-featured-bottom-txt p {
@@ -652,4 +662,16 @@ article.node {
 
 .block-twitter-block .block__title.block-title {
     display: none;
+}
+
+.view-educloud-frontpage-featured-articles .views-field-field-link .field-content {
+    height: 43px;
+    margin-top: 50px;
+}
+
+.view-educloud-frontpage-featured-articles .views-field-field-link .field-content > a {
+    color: #ffffff;
+    padding: 10px 90px;
+    background: url("../images/readmore_bg.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    text-decoration: none;
 }
