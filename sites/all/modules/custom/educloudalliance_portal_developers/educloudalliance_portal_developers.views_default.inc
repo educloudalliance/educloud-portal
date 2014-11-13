@@ -27,7 +27,7 @@ function educloudalliance_portal_developers_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['json_file'] = 'https://api.github.com/repos/koulutuksenpilvivayla/pilvivayla-basaari/issues';
+  $handler->display->display_options['query']['options']['json_file'] = 'https://api.github.com/repos/educloudalliance/educloud-bazaar/issues';
   $handler->display->display_options['query']['options']['row_apath'] = '.';
   $handler->display->display_options['query']['options']['show_errors'] = 1;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -93,7 +93,7 @@ function educloudalliance_portal_developers_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['json_file'] = 'https://api.github.com/repos/koulutuksenpilvivayla/pilvivayla-kysy/issues';
+  $handler->display->display_options['query']['options']['json_file'] = 'https://api.github.com/repos/educloudalliance/educloud-knowhow/issues';
   $handler->display->display_options['query']['options']['row_apath'] = '.';
   $handler->display->display_options['query']['options']['show_errors'] = 1;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
@@ -159,7 +159,7 @@ function educloudalliance_portal_developers_views_default_views() {
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['query']['options']['json_file'] = 'https://api.github.com/users/koulutuksenpilvivayla/repos';
+  $handler->display->display_options['query']['options']['json_file'] = 'https://api.github.com/users/educloudalliance/repos';
   $handler->display->display_options['query']['options']['row_apath'] = '.';
   $handler->display->display_options['query']['options']['show_errors'] = 1;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
