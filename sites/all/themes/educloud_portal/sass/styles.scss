@@ -355,6 +355,9 @@ div#pre-footer-image {
   #main {
     padding-left: 25px;
   }
+  #top-bar {
+    height: 0.05em;
+  }
 }
 @include breakpoint('mini-tablet') {
   #block-views-frontpage-who-and-why-block h2 {
